@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>markdown previewer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/marked/4.1.0/marked.min.js"
+      integrity="sha512-DZIC9m2IbFlio5GE2oKD6/veW6NXML5Cbo9FHnba7Q9R4OCPelWw9R5QpupcPPLSv0euhuRr+5JV5pWl3X3nSg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+  <body>
+    <main>
+      <div class="editor">
+        <div class="header-editor">Editor</div>
+        <textarea name="" id="editor" cols="70" rows="10">
+# This is a  h1 heading 
+
+## This is a h2 heading
+          
+This is a [link](#)
+          
+This is a list: 
+1. Hello. 
+2. Hi.
+3. Hola.
+          
+`This is a inline code`
+```
+This is a block code
+```
+                
+>A Block Quote! 
+                
+A **bold text** 
+          
+![freeCodeCamp Logo](https://cdn.freecodecamp.org/testable-projects-fcc/images/fcc_secondary.svg) 
+</textarea
+        >
+      </div>
+
+      <div class="preview">
+        <div class="header-preview">Preview</div>
+        <div id="preview"></div>
+      </div>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
