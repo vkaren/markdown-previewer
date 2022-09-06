@@ -3,9 +3,6 @@ body {
   height: 100%;
 }
 body {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
   background: rgb(14, 14, 14);
   font-family: "Inconsolata", monospace;
   color: rgb(255 255 255);
